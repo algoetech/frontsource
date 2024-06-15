@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <div class="grid w-full grid-cols-12 pt-3 buttons">
+        <div class="container flex justify-between w-full gap-3 py-5 lg:flex-col lg:col-span-2 lg-max:col-span-12">
+            <a href="" class="p-3 bg-white border-1 border-gray-600/30 rounded-5 shadow-soft-lg hover:scale-102 hover:bg-cyan-200">
+                Speech
+            </a>
+            <a href="" class="p-3 bg-white border-1 border-gray-600/30 rounded-5 shadow-soft-lg hover:scale-102 hover:bg-cyan-200">
+                Live Image Detection
+            </a>
+        </div>
+        <div class="p-3 lg:col-span-10 lg-max:col-span-12">
+            <div class="mx-auto relative shadow-soft-xl rounded-3 lg-max:w-[98%] lg:w-[69%] bg-white p-3 text-center items-center content-center">
+                <h2>Text To Speech</h2>
+                <textarea class="mx-auto rounded-2" name="" id="text" cols="60" rows="5" placeholder="Enter Text Here..."></textarea>
+
+                <div id="convert-button" class="px-3 py-2 mx-auto text-white bg-cyan-700 rounded-2 max-w-[180px]">
+                    Convert to Speech
+                </div>
+                <div class="spinner" id="loading-spinner"></div>
+                <div class="loader" id="loader" style="display: none"></div>
+                <audio id="audio" class="w-[80%] mx-auto my-2 rounded-2" controls></audio>
+                <p class="pt-3">
+                    <a href="" class="p-3 px-4 mt-2 text-white rounded-2 bg-cyan-400 hover:bg-cyan-800">
+                        Speech to words
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
